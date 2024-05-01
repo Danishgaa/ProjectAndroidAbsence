@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lin_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/linear_listview_gurumhs">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            card_view:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/iv_absensi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:background="@color/colorGrey"
+            android:paddingLeft="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nama"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:id="@+id/tv_nama" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/ivIconKategori"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_baseline_alternate_email_24"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Email - Kelas"
+                    android:id="@+id/tv_emailkelas" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_baseline_article_24"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textSize="13dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Keterangan"
+                    android:id="@+id/tv_keterangan" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="13dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tanggal"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:id="@+id/tv_tanggal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

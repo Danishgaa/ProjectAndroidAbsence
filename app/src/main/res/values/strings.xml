@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AplikasiAbsensi</string>
+    <string name="empty_list_text">Empty List Text</string>
+    <string-array name="jurusan">
+        <item>--Pilih--</item>
+        <item>BICT A</item>
+        <item>BICT B</item>
+        <item>BDCM A</item>
+        <item>BDCM B</item>
+        <item>DIMAR A</item>
+        <item>DIMAR B</item>
+        <item>TIES A</item>
+        <item>TIES B</item>
+    </string-array>
+    <string-array name="status">
+        <item>--Pilih status anda--</item>
+        <item>Guru</item>
+        <item>Mahasiswa</item>
+    </string-array>
+    <string name="app_name1">Form</string>
+    <string name="id_absen">Nama Absen</string>
+    <string name="tanggal">Date</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="save">Save</string>
+    <string name="Absensi">Absen atau masuk</string>
+</resources>

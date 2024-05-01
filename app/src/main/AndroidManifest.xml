@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package= "com.example.aplikasiabsensi">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/machine"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoTitleBar"
+        android:name="android.support.multidex.MultiDexApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".guru.ViewDataGuruActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".siswa.ViewDataMahasiswaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".sign.RegisterActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".guru.FormAbsenActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".guru.ViewAllDataAbsenActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".guru.DetailDataGuruActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".guru.ViewDataAbsenGuruActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".siswa.DashboardMahasiswaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".guru.DashboardGuruActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".siswa.ProfilMahasiswaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".guru.ProfilGuruActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".sign.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sign.LoginActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="3dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_collapseMode="pin">
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Aplikasi Absensi"
+        android:layout_gravity="left"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profil"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_overlay="true"
+        android:src="@drawable/user_icon"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="15dp"
+        android:clickable="true"/>
+
+</androidx.appcompat.widget.Toolbar>
